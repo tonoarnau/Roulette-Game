@@ -1,0 +1,90 @@
+page-roulette {
+  .bargame {
+    border: 0;
+    box-shadow: none;
+  }
+  .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .page-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 1.2em;
+  }
+
+  .roulette {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .score {
+    color: #488aff;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .blue {
+    border: 4px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 100% 0 0 0;
+    background: #e67e22;
+    display: inline-block;
+  }
+
+  .red {
+    border: 4px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 0 100% 0 0;
+    background: #f39c12;
+    display: inline-block;
+  }
+
+  .green {
+    border: 4px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 0 0 100% 0;
+    background: #d35400;
+    display: inline-block;
+  }
+
+  .purple {
+    border: 4px solid white;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 0 0 0 100%;
+    background: #c0392b;
+    display: inline-block;
+  }
+
+  .sector {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .iconGame {
+    color: white;
+  }
+
+
+
+}

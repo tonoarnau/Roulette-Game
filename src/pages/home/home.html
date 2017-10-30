@@ -1,14 +1,10 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <div class="welcome" [@slidy]>
+        <img src="./assets/imgs/logo.png" alt="logo" width="250">
+        <h2>{{ title }}</h2>
+        <button ion-button color="danger" (click)="startGame()">START GAME!</button>
+    </div>
 </ion-content>
+

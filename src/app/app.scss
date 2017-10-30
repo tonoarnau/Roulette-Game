@@ -1,16 +1,74 @@
-// http://ionicframework.com/docs/theming/
+/* Globals */
+html {
+  box-sizing: border-box;
+}
 
+body, *, *:after, *:before {
+  box-sizing: inherit;
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Poppins-400/Poppins-400.eot');
+  src: url('../assets/fonts/Poppins-400/Poppins-400.eot?#iefix') format('embedded-opentype'),
+      local('Poppins regular'),
+      local('Poppins-400'),
+       url('../assets/fonts/Poppins-400/Poppins-400.woff2') format('woff2'),
+       url('../assets/fonts/Poppins-400/Poppins-400.woff') format('woff'),
+       url('../assets/fonts/Poppins-400/Poppins-400.ttf') format('truetype'),
+       url('../assets/fonts/Poppins-400/Poppins-400.svg#Poppins') format('svg');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-style: bold;
+  src: url('../assets/fonts/Poppins-600/Poppins-600.eot');
+  src: url('../assets/fonts/Poppins-600/Poppins-600.eot?#iefix') format('embedded-opentype'),
+      local('Poppins bold'),
+      local('Poppins-600'),
+       url('../assets/fonts/Poppins-400/Poppins-600.woff2') format('woff2'),
+       url('../assets/fonts/Poppins-400/Poppins-600.woff') format('woff'),
+       url('../assets/fonts/Poppins-400/Poppins-600.ttf') format('truetype'),
+       url('../assets/fonts/Poppins-400/Poppins-600.svg#Poppins') format('svg');
+
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Inconsolata-400/Inconsolata-400.eot');
+  src: url('../assets/fonts/Inconsolata-400/Inconsolata-400.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/Inconsolata-400/Inconsolata-400.woff2') format('woff2'),
+       url('../assets/fonts/Inconsolata-400/Inconsolata-400.woff') format('woff'),
+       url('../assets/fonts/Inconsolata-400/Inconsolata-400.ttf') format('truetype'),
+       url('../assets/fonts/Inconsolata-400/Inconsolata-400.svg#Inconsolata') format('svg');
+
+}
+
+/* Footer */
+.socials {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socialbtn {
+  background: #f1c40f;
+  color: #111111;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: .5em;
+  margin: 0 .5em;
+  font-size: .8em;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  &:hover {
+    opacity: .8;
+  }
+}

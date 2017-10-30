@@ -41,7 +41,7 @@ $colors: (
   dark:       #222
 );
 
-
+$background-color: #f1c40f;
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
@@ -86,3 +86,13 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+$font-family-md-base: "Inconsolata";
+$font-family-ios-base: "Inconsolata";
+$font-family-wp-base: "Inconsolata";
+
+
+$font-family-md-special: "Inconsolata";
+$font-family-ios-special: "Inconsolata";
+$font-family-wp-special: "Inconsolata";

@@ -1,0 +1,40 @@
+
+<ion-header class="bargame">
+  <button (click)="backHome()" ion-button color="dark" clear>
+    <ion-icon name="close"></ion-icon>
+  </button>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="game" [@fady]>
+      <h1 class="page-title">How lucky<br>are you?</h1>
+      <div class="roulette" [@rotaty]="visibleState">
+        <div class="sector blue">
+          <ion-icon name="logo-euro" class="iconGame"></ion-icon>
+        </div>
+        <div class="sector red">
+            <ion-icon name="logo-bitcoin" class="iconGame"></ion-icon>
+        </div>
+        <div class="sector purple">
+            <ion-icon name="thumbs-up" class="iconGame"></ion-icon>
+        </div>
+        <div class="sector green">
+            <ion-icon name="thumbs-down" class="iconGame"></ion-icon>
+        </div>
+      </div>
+      <button ion-button color="danger" (click)="goGame()">START GAME!</button>
+  </div>
+
+
+</ion-content>
+
+
+
+<ion-footer>
+    <ion-toolbar color="dark">
+      <p class="score" end [@scory]="scoreState">
+        Score: {{ total }}
+      </p>
+    </ion-toolbar>
+  </ion-footer>
