@@ -1,4 +1,4 @@
-A silly game made in Ionic
+A silly game made with Ionic
 
 ## How to play
 
