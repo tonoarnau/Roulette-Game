@@ -3,6 +3,9 @@ import { IonicPage, NavController, NavParams, AlertController, ToastController }
 import { slideAnimation, fadeAnimation } from '../../app/animations';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
+//Service
+import { PlayersProvider } from './../../providers/players/players';
+
 @IonicPage()
 @Component({
   selector: 'page-roulette',
@@ -38,6 +41,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class RoulettePage {
+  player:Array<any>;
   visibleState:string = 'inactive';
   rdmNumber:number;
   result:string;
@@ -51,7 +55,8 @@ export class RoulettePage {
     public navParams: NavParams,
     public alertCtrl: AlertController,
     public toast: ToastController,
-  ) {
+    private playerProvider: PlayersProvider) {
+      this.player = playerProvider.getPlayer();
   }
 
   ionViewDidLoad() {
@@ -59,6 +64,7 @@ export class RoulettePage {
   }
 
   backHome() {
+    this.player.pop();
     this.navCtrl.push('HomePage');
   }
 
@@ -83,7 +89,7 @@ export class RoulettePage {
         };
         let alert = this.alertCtrl.create({
           title: this.result,
-          subTitle: `You win ${this.points} points`,
+          subTitle: `You've got ${this.points} points`,
           buttons: [
             {
               text: 'Play Again'

@@ -1,6 +1,6 @@
 
 <ion-header class="bargame">
-  <button (click)="backHome()" ion-button color="dark" clear>
+  <button (click)="backHome()" ion-button large color="dark" clear>
     <ion-icon name="close"></ion-icon>
   </button>
 </ion-header>
@@ -8,8 +8,9 @@
 
 <ion-content padding>
   <div class="game" [@fady]>
-      <h1 class="page-title">How lucky<br>are you?</h1>
+      <h1 class="page-title">How lucky are you<br> Mr.{{ player }}?</h1>
       <div class="roulette" [@rotaty]="visibleState">
+        <div class="inner-circle"></div>
         <div class="sector blue">
           <ion-icon name="logo-euro" class="iconGame"></ion-icon>
         </div>
