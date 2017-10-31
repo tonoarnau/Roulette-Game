@@ -1,4 +1,10 @@
 page-roulette {
+
+  $sectorOne: #3498db;
+  $sectorTwo: #2980b9;
+  $sectorThree: #34495e;
+  $sectorFour: #2c3e50;
+
   .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
     background-image: none;
   }
@@ -51,39 +57,39 @@ page-roulette {
     margin: 0 auto;
   }
 
-  .blue {
+  .topleft {
     border: 4px solid white;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
     border-radius: 100% 0 0 0;
-    background: #e67e22;
+    background: $sectorOne;
     display: inline-block;
   }
 
-  .red {
+  .topright {
     border: 4px solid white;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
     border-radius: 0 100% 0 0;
-    background: #f39c12;
+    background: $sectorTwo;
     display: inline-block;
   }
 
-  .green {
+  .bottomleft {
     border: 4px solid white;
     border-top: 2px solid white;
     border-left: 2px solid white;
     border-radius: 0 0 100% 0;
-    background: #d35400;
+    background: $sectorOne;
     display: inline-block;
   }
 
-  .purple {
+  .bottomright {
     border: 4px solid white;
     border-top: 2px solid white;
     border-right: 2px solid white;
     border-radius: 0 0 0 100%;
-    background: #c0392b;
+    background: $sectorTwo;
     display: inline-block;
   }
 

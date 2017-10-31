@@ -8,19 +8,19 @@
 
 <ion-content padding>
   <div class="game" [@fady]>
-      <h1 class="page-title">How lucky are you<br> Mr.{{ player }}?</h1>
+      <h1 class="page-title">How lucky are you<br> {{ player }}?</h1>
       <div class="roulette" [@rotaty]="visibleState">
         <div class="inner-circle"></div>
-        <div class="sector blue">
+        <div class="sector topleft">
           <ion-icon name="logo-euro" class="iconGame"></ion-icon>
         </div>
-        <div class="sector red">
+        <div class="sector topright">
             <ion-icon name="logo-bitcoin" class="iconGame"></ion-icon>
         </div>
-        <div class="sector purple">
+        <div class="sector bottomright">
             <ion-icon name="thumbs-up" class="iconGame"></ion-icon>
         </div>
-        <div class="sector green">
+        <div class="sector bottomleft">
             <ion-icon name="thumbs-down" class="iconGame"></ion-icon>
         </div>
       </div>

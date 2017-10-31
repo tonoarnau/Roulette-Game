@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { slideAnimation, fadeAnimation } from '../../app/animations';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
@@ -54,8 +54,7 @@ export class RoulettePage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController,
-    public toast: ToastController,
-    private playerProvider: PlayersProvider) {
+    public playerProvider: PlayersProvider) {
       this.player = playerProvider.getPlayer();
   }
 
